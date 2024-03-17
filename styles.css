@@ -1,0 +1,74 @@
+body {
+    background-color: black;
+}
+
+/* Estilo base para o botão */
+.awesome-button {
+    font-size: 16px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #fff;
+    background-color: #4CAF50;
+    position: relative;
+    overflow: hidden;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    outline: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Texto */
+.awesome-button span:first-child {
+    transition: transform 0.3s ease;
+}
+
+/* Ícone */
+.awesome-button .icon {
+    margin-left: 8px;
+    transition: transform 0.3s ease;
+}
+
+/* Shine effect */
+.awesome-button .shine {
+    position: absolute;
+    top: -100%;
+    left: -100%;
+    width: 200%;
+    height: 200%;
+    background: rgba(255, 255, 255, 0.4);
+    transform: rotate(45deg);
+    transition: top 0.5s ease, left 0.5s ease;
+}
+
+/* Efeito de hover no botão */
+.awesome-button:hover {
+    background-color: #105c14;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Efeito de foco */
+.awesome-button:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(52, 112, 55, 0.4);
+}
+
+/* Efeito de clique */
+.awesome-button:active {
+    transform: translateY(2px);
+}
+
+
+/* Efeito de hover no ícone */
+.awesome-button:hover .icon {
+    transform: translateX(5px);
+}
+
+/* Efeito de hover no brilho */
+.awesome-button:hover .shine {
+    top: -20%;
+    left: -20%;
+}
